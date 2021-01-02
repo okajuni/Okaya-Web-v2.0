@@ -278,6 +278,9 @@ p {
 	max-width: 500px;
 	margin: 0 auto;
 }
+#compétences .compétences-top p{
+	font-size: 20px;
+}
 #compétences .compétences-bottom {
 	display: flex;
 	align-items: center;
@@ -288,17 +291,21 @@ p {
 #compétences .compétences-item {
 	flex-basis: 100%;
 	display: flex;
-	align-items: flex-start;
+	align-items: flex;
 	justify-content: center;
 	flex-direction: column;
 	padding: 50px;
-	border-radius: 35px;
-	background-image: url(https://media.discordapp.net/attachments/614504741665374218/784512912370171944/test.gif);
-	background-size: contain;
-	margin: 150px 10px;
+	border-radius: 50px;
+	background-image: url(https://media.giphy.com/media/58Y1tQU8AAhna/giphy.gif);
+	background-size: cover;
+	margin: 500px 500px;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+}
+#compétences .compétences-item p{
+	font-size: 20px;
+	cursor: copy;
 }
 #compétences .compétences-item::after {
 	content: '';
@@ -307,13 +314,13 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #5910ad 0%, #630c79 100%);
+	background-image: linear-gradient(60deg, #5910ad 5%, #5910ad 100%);
 	opacity: .9;
 	z-index: -1;
 }
 #compétences .compétences-bottom .icon {
-	height: 80px;
-	width: 80px;
+	height: 100px;
+	width: 100px;
 	margin-bottom: 20px;
 }
 #compétences .compétences-item h2 {
@@ -364,7 +371,7 @@ p {
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #5910ad 0%, #630c79 100%);
+	background-image: linear-gradient(60deg, #5910ad 5%, #5910ad 100%);
 	color: white;
 }
 #Membres .Membres-info h1 {
@@ -372,12 +379,13 @@ p {
 	font-weight: 500;
 }
 #Membres .Membres-info h2 {
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
 #Membres .Membres-info p {
 	color: white;
+	font-size: 20px;
 }
 #Membres .Membres-img {
 	flex-basis: 50%;
@@ -393,7 +401,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #5910ad 0%, #630c79 100%);
+	background-image: linear-gradient(60deg, #6c0cda85 0%, #8310a05b 100%);
 	opacity: .7;
 }
 #Membres .Membres-img img {
@@ -420,13 +428,14 @@ p {
 	width: 100%;
 }
 #about .col-right h2 {
-	font-size: 1.8rem;
+	font-size: 25px;
 	font-weight: 500;
 	letter-spacing: .2rem;
 	margin-bottom: 10px;
 }
 #about .col-right p {
 	margin-bottom: 20px;
+	font-size: 20px;
 }
 #about .col-right .cta {
 	color: white;
@@ -443,7 +452,7 @@ p {
     border-radius: 35px;
 }
 #about .col-left .about-img img{
-	border-radius: 20px;
+	border-radius: 25px;
 	border-style: solid;
 }
 #about .col-left .about-img::after {
@@ -459,12 +468,12 @@ p {
 }
 @keyframes hamburger_puls {
 	0% {
-		opacity: 1;
+		opacity: 0.5;
 		transform: scale(2);
 	}
 	100% {
 		opacity: 0;
-		transform: scale(2.7);
+		transform: scale(3);
 	}
 }
 @keyframes text_reveal_box {
@@ -484,7 +493,7 @@ p {
 }
 @keyframes text_reveal_name {
 	100% {
-		color: rgb(98, 0, 255);
+		color: rgba(98, 0, 255, 0.815);
 		font-weight: 500;
 	}
 }
@@ -602,16 +611,16 @@ footer .copifoot .sec
 }
 footer .copifoot .sec.aboutus
 {
-    width: 35%;
+    width: 40%;
 }
 footer .copifoot h2
 {
     position: relative;
     color: white;
-    font-weight: 600;
+    font-weight: 800;
 	margin-bottom: 25px;
-	font-size: 20px;
-    margin-right: 5px;
+	font-size: 25px;
+    margin-right: 10px;
 }
 footer .copifoot h2::before
 {
@@ -629,7 +638,7 @@ footer .copifoot h2::before
 footer p
 {
 	color: #999;
-	font-size: 20px;
+	font-size: 23px;
     margin-right: 5px;
 }
 .mnip
@@ -684,7 +693,7 @@ footer p
 .lienprincipauxviedemamèrejevaismebutersipersonnecliquedessus ul li 
 {
     list-style: none;
-    font-size: 20px;
+    font-size: 22px;
     margin-right: 5px;
 }
 .lienprincipauxviedemamèrejevaismebutersipersonnecliquedessus ul li a 
@@ -710,21 +719,6 @@ footer p
 	display: flex;
 	margin-bottom: 10px;
 }
-.contact .info li span:nth-child(1)
-{
-    color: #fff;
-    font-size: 20px;
-    margin-right: 5px;
-}
-.contact .info li span
-{
-    color: #999;
-
-}
-.contact .info li span a
-{
-    color: #999;
-}
 .contact .info li a
 {
     color: #999;
@@ -744,10 +738,14 @@ footer p
     text-align: center;
 	color: white;
 	text-shadow: 2px 2px red blue;
-	font-weight: 400px;
 	margin-bottom: 50px;
-	font-size: 20px;
     margin-right: 5px;
+}
+.copiryght p
+{
+	width: 100%;
+	font-size: 25px;
+	padding: 10px;
 }
 @media (max-width: 990px)
 {
@@ -780,6 +778,12 @@ footer p
         text-align: center;
 		color: #fff;
 	}
+	.copiryght p
+    {
+	width: 100%;
+	font-size: 25px;
+    padding: 10px;
+    }
 }
 
 
