@@ -8,7 +8,6 @@ et de tout ce qui était sur le fun maintenant nous avons plus envi d'un design 
 Bonne journée/soirée et bon code et bon code ;)
 
 
-PS  il y à un fichier en php car le site est herbgé sur heroku !
-
+NOUVEAU HOST 
 lien : 
 https://heroku.com
